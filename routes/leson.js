@@ -1,8 +1,8 @@
 const express = require('express').Router()
 const router = express
-const ControllerLesson = require('../Controller/Lesson')
+const ControllerLesson = require('../controllers/Lesson')
 
-router.get('/',ControllerLesson.findall)
+router.get('/lesson',ControllerLesson.findall)
 router.get('/addLesson',ControllerLesson.renderAdd)
 router.post('/addLesson',ControllerLesson.addLesson)
 router.get('/:id/update',ControllerLesson.renderUpdate)
