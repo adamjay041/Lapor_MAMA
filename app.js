@@ -1,11 +1,16 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const router = require('./routes/appRouter.js')
+
+const Router = require('./routes')
+
+app.use(express.urlencoded({extended : false}))
 
 app.set('view engine', 'ejs')
-app.use(express.urlencoded({ extended:false }))
 
-app.use(router)
+app.use(Router)
 
-app.listen(port, () => {})
+
+app.listen(3000,()=>{
+    console.log(port)
+})
