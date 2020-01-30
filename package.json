@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/adamjay041/Lapor_MAMA#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "pg": "^7.17.1",
